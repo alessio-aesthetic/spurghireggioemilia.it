@@ -107,7 +107,7 @@ export function HomeExperience() {
 
   return (
     <main ref={root}>
-      <section className="relative h-screen min-h-[780px] overflow-hidden bg-blacklux">
+      <section className="relative min-h-[100svh] overflow-hidden bg-blacklux pt-32 lg:pt-28">
         <video
           className="absolute inset-0 h-full w-full object-cover grayscale"
           poster="/images/hero-bw.jpg"
@@ -119,10 +119,10 @@ export function HomeExperience() {
           <source src="/video/hero.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_28%,rgba(182,138,42,.18),transparent_30%),linear-gradient(90deg,#F7F4EE_0%,rgba(247,244,238,.92)_43%,rgba(247,244,238,.58)_100%)]" />
-        <div className="luxury-grid relative z-10 mx-auto h-full max-w-[1800px] items-end px-6 pb-16 lg:px-12">
+        <div className="luxury-grid relative z-10 mx-auto min-h-[calc(100svh-8rem)] max-w-[1800px] items-end px-6 pb-16 lg:px-12">
           <div className="col-span-12 pb-10 lg:col-span-8">
             <p className="mb-8 text-xs font-extrabold uppercase tracking-[0.28em] text-gold">Autospurgo e fognature H24</p>
-            <h1 ref={heroTitle} className="font-display text-[14vw] font-extrabold leading-[0.92] tracking-[-0.055em] text-ink lg:text-[8vw]">
+            <h1 ref={heroTitle} className="fluid-hero mobile-safe-copy font-display font-extrabold leading-[0.94] tracking-[-0.045em] text-ink">
               Spurghi a Reggio Emilia con interventi rapidi e ordinati.
             </h1>
             <p className="hero-subtitle mt-10 max-w-2xl text-lg leading-8 text-ink/70">
@@ -132,7 +132,7 @@ export function HomeExperience() {
           <div className="col-span-12 flex flex-col items-start gap-8 pb-10 lg:col-span-4">
             <div className="border-l border-gold pl-6">
               <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-ink/55">Interventi nel 2024</p>
-              <p className="mt-2 font-display text-7xl font-extrabold text-gold">
+              <p className="mt-2 font-display text-6xl font-extrabold text-gold sm:text-7xl">
                 <span ref={counter}>0</span>
               </p>
             </div>
@@ -148,10 +148,10 @@ export function HomeExperience() {
 
       <section className="luxury-grid mx-auto max-w-[1800px] gap-y-16 px-6 py-36 lg:px-12">
         <div className="col-span-12 lg:col-span-4">
-          <h2 className="sticky top-36 font-display text-7xl leading-none tracking-[-0.04em]">Emergenza?</h2>
+          <h2 className="sticky top-36 fluid-section-title mobile-safe-copy font-display font-extrabold leading-none tracking-[-0.035em]">Emergenza?</h2>
         </div>
         <div className="manifesto-copy col-span-12 space-y-24 lg:col-span-7 lg:col-start-6">
-          <p className="font-display text-4xl leading-tight text-ink lg:text-6xl">
+          <p className="mobile-safe-copy font-display text-4xl font-extrabold leading-tight text-ink lg:text-6xl">
             Prima si capisce dove nasce il blocco. Poi si decide come intervenire.
           </p>
           <p className="text-2xl leading-relaxed text-ink/70">
@@ -167,7 +167,7 @@ export function HomeExperience() {
         <div className="luxury-grid mx-auto max-w-[1800px] gap-y-12">
           <div className="col-span-12 lg:col-span-5">
             <p className="text-xs font-bold uppercase tracking-[0.35em] text-gold">Servizi principali</p>
-            <h2 className="mt-6 font-display text-7xl leading-none tracking-[-0.05em]">Quattro interventi. Nessuna griglia da volantino.</h2>
+            <h2 className="mt-6 fluid-section-title mobile-safe-copy font-display font-extrabold leading-none tracking-[-0.04em]">Quattro interventi. Nessuna griglia da volantino.</h2>
           </div>
           <div className="col-span-12 grid gap-8 lg:col-span-11 lg:col-start-2">
             {services.slice(0, 4).map((service, index) => (
@@ -190,7 +190,7 @@ export function HomeExperience() {
                 </div>
                 <div className="col-span-12 flex flex-col justify-end p-8 lg:col-span-7 lg:p-12">
                   <p className="text-xs font-bold uppercase tracking-[0.3em] text-gold">{service.menu}</p>
-                  <h3 className="mt-6 font-display text-5xl leading-none transition duration-500 group-hover:translate-x-2 lg:text-7xl">
+                  <h3 className="mt-6 mobile-safe-copy font-display text-4xl font-extrabold leading-none transition duration-500 group-hover:translate-x-2 lg:text-7xl">
                     {service.title}
                   </h3>
                   <p className="mt-6 max-w-2xl leading-7 text-ink/60">{service.intro}</p>
@@ -205,7 +205,7 @@ export function HomeExperience() {
         <div className="luxury-grid mx-auto max-w-[1800px] gap-y-12">
           <div className="col-span-12 lg:col-span-4">
             <p className="text-xs font-bold uppercase tracking-[0.35em] text-gold">Processo</p>
-            <h2 className="mt-6 font-display text-7xl leading-none tracking-[-0.05em]">Tre mosse, tutte visibili.</h2>
+            <h2 className="mt-6 fluid-section-title mobile-safe-copy font-display font-extrabold leading-none tracking-[-0.04em]">Tre mosse, tutte visibili.</h2>
           </div>
           <div className="col-span-12 lg:col-span-8">
             <svg viewBox="0 0 900 120" className="mb-12 h-24 w-full">
@@ -244,7 +244,7 @@ export function HomeExperience() {
       <section className="gold-mesh px-6 py-40 lg:px-12">
         <div className="luxury-grid mx-auto max-w-[1800px]">
           <div className="col-span-12 lg:col-span-9">
-            <h2 className="font-display text-[18vw] leading-[0.82] tracking-[-0.07em] lg:text-[10vw]">
+            <h2 className="mobile-safe-copy font-display text-[16vw] font-extrabold leading-[0.92] tracking-[-0.045em] lg:text-[10vw]">
               La fognatura non aspetta.
             </h2>
           </div>

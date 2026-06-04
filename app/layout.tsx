@@ -5,6 +5,7 @@ import { CustomCursor } from "@/components/custom-cursor";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { SmoothScroll } from "@/components/smooth-scroll";
+import { StickyPhone } from "@/components/sticky-phone";
 import { site } from "@/lib/site-data";
 import "./globals.css";
 
@@ -70,6 +71,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <StickyPhone />
       </body>
     </html>
   );

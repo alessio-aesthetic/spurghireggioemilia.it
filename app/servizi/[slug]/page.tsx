@@ -39,14 +39,14 @@ export default function ServicePage({ params }: Props) {
   if (!service) notFound();
 
   return (
-    <main className="pt-32">
+    <main className="pt-40 lg:pt-36">
       <LocalBusinessJsonLd />
       <FaqJsonLd faq={service.faq} />
 
       <section className="luxury-grid mx-auto max-w-[1800px] gap-y-12 px-6 py-20 lg:px-12">
         <div className="col-span-12 lg:col-span-7">
           <p className="text-xs font-bold uppercase tracking-[0.35em] text-gold">{service.menu}</p>
-          <h1 className="mt-8 font-display text-[16vw] leading-[0.86] tracking-[-0.07em] lg:text-[8.5vw]">
+          <h1 className="fluid-page-title mobile-safe-copy mt-8 font-display font-extrabold leading-[0.92] tracking-[-0.045em]">
             {service.title}
           </h1>
           <p className="mt-10 max-w-3xl text-2xl leading-relaxed text-ink/70">{service.intro}</p>
@@ -72,7 +72,7 @@ export default function ServicePage({ params }: Props) {
       <section className="bg-white px-6 py-28 lg:px-12">
         <div className="luxury-grid mx-auto max-w-[1800px] gap-8">
           <div className="col-span-12 lg:col-span-4">
-            <h2 className="font-display text-6xl leading-none">Domande frequenti</h2>
+            <h2 className="fluid-section-title mobile-safe-copy font-display font-extrabold leading-none">Domande frequenti</h2>
           </div>
           <div className="col-span-12 grid gap-6 lg:col-span-8">
             {service.faq.map((item) => (
@@ -88,7 +88,7 @@ export default function ServicePage({ params }: Props) {
       <section className="gold-mesh px-6 py-32 lg:px-12">
         <div className="luxury-grid mx-auto max-w-[1800px]">
           <div className="col-span-12 lg:col-span-8">
-            <h2 className="font-display text-7xl leading-none tracking-[-0.05em]">Vuoi risolvere adesso?</h2>
+            <h2 className="fluid-section-title mobile-safe-copy font-display font-extrabold leading-none tracking-[-0.04em]">Vuoi risolvere adesso?</h2>
           </div>
           <div className="col-span-12 mt-8 lg:col-span-4 lg:mt-0 lg:self-end">
             <Button asChild size="lg">

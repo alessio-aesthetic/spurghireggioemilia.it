@@ -23,12 +23,12 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="pt-32">
+    <main className="pt-40 lg:pt-36">
       <LocalBusinessJsonLd />
       <section className="luxury-grid mx-auto max-w-[1800px] gap-y-12 px-6 py-20 lg:px-12">
         <div className="col-span-12 lg:col-span-7">
           <p className="text-xs font-bold uppercase tracking-[0.35em] text-gold">Contattaci</p>
-          <h1 className="mt-8 font-display text-[16vw] leading-[0.86] tracking-[-0.07em] lg:text-[8.5vw]">
+          <h1 className="fluid-page-title mobile-safe-copy mt-8 font-display font-extrabold leading-[0.92] tracking-[-0.045em]">
             Una chiamata. Poi il piano.
           </h1>
           <p className="mt-10 max-w-3xl text-2xl leading-relaxed text-ink/70">

@@ -20,6 +20,7 @@ body {
 
 body {
   overflow-x: hidden;
+  padding-bottom: 5.5rem;
 }
 
 ::selection {
@@ -94,6 +95,23 @@ a {
     #F7F4EE;
   background-size: 160% 160%;
   animation: meshMove 8s ease-in-out infinite alternate;
+}
+
+.fluid-hero {
+  font-size: clamp(3.4rem, 13vw, 9rem);
+}
+
+.fluid-page-title {
+  font-size: clamp(3.2rem, 12vw, 8rem);
+}
+
+.fluid-section-title {
+  font-size: clamp(2.5rem, 9vw, 5rem);
+}
+
+.mobile-safe-copy {
+  overflow-wrap: anywhere;
+  word-break: normal;
 }
 
 @keyframes meshMove {
