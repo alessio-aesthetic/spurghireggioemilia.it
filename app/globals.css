@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  background: #0A0A0A;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  background: #0A0A0A;
+  color: #EDEDED;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #D4AF37;
+  color: #0A0A0A;
+}
+
+a {
+  text-decoration: none;
+}
+
+.luxury-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.link-underline {
+  position: relative;
+}
+
+.link-underline::after {
+  background: #D4AF37;
+  bottom: -0.25rem;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.45s ease;
+  width: 100%;
+}
+
+.link-underline:hover::after {
+  transform: scaleX(1);
+}
+
+.clip-reveal {
+  clip-path: inset(14% 0 14% 0);
+  opacity: 0.25;
+}
+
+.custom-cursor,
+.custom-cursor-ring {
+  pointer-events: none;
+  position: fixed;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+}
+
+.custom-cursor {
+  background: #EDEDED;
+  border-radius: 999px;
+  height: 8px;
+  width: 8px;
+}
+
+.custom-cursor-ring {
+  border: 1px solid #EDEDED;
+  border-radius: 999px;
+  height: 40px;
+  opacity: 0;
+  width: 40px;
+}
+
+.gold-mesh {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(212, 175, 55, 0.34), transparent 28%),
+    radial-gradient(circle at 80% 10%, rgba(212, 175, 55, 0.22), transparent 30%),
+    radial-gradient(circle at 65% 85%, rgba(212, 175, 55, 0.3), transparent 34%),
+    #0A0A0A;
+  background-size: 160% 160%;
+  animation: meshMove 8s ease-in-out infinite alternate;
+}
+
+@keyframes meshMove {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 100% 70%;
+  }
+}
+
+.marquee-track {
+  animation: marquee 28s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (hover: none) {
+  .custom-cursor,
+  .custom-cursor-ring {
+    display: none;
+  }
+}
