@@ -1,217 +1,136 @@
 ﻿<!doctype html>
 <html lang="it">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Spurghi a Reggio Emilia H24 | Autospurgo Premium</title>
-    <meta name="description" content="Spurghi a Reggio Emilia, autospurgo, disotturazione tubi e pronto intervento fognature H24. Servizio premium per case, condomini e aziende.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="assets/vendor/lottie.min.js" defer></script>
-    <script>
-      tailwind.config = { theme: { extend: { colors: { obsidian: "#11100e", espresso: "#1c1914", emeraldpro: "#34d399", goldpro: "#d7b56d", pearl: "#f4efe7" }, boxShadow: { premium: "0 30px 110px rgba(0,0,0,.38)", glow: "0 0 55px rgba(52,211,153,.24)" } } } };
-    </script>
-    <style>
-      html{scroll-behavior:smooth} body{background:#11100e}
-      .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}.reveal.is-visible{opacity:1;transform:translateY(0)}
-      .shine{position:relative;overflow:hidden}.shine:after{content:"";position:absolute;inset:-70% auto auto -80%;width:48%;height:240%;transform:rotate(25deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.46),transparent);animation:shine 6s ease-in-out infinite}@keyframes shine{0%,45%{left:-80%}75%,100%{left:140%}}
-      .grain:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.12;background-image:radial-gradient(circle at 20% 20%,#fff 0 1px,transparent 1px);background-size:26px 26px}
-      .float-soft{animation:floatSoft 7s ease-in-out infinite}@keyframes floatSoft{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
-    </style>
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Spurghi Reggio Emilia","url":"https://spurghireggioemilia.it/","telephone":"+3905221770369","address":{"@type":"PostalAddress","streetAddress":"Via Vincenzo Monti, 12","addressLocality":"Reggio Emilia","addressRegion":"RE","postalCode":"42122","addressCountry":"IT"},"openingHours":"Mo-Su 00:00-23:59","areaServed":["Reggio Emilia","Scandiano","Correggio","Carpi","Rubiera","Montecchio Emilia","Cavriago","Albinea"],"description":"Servizi premium di spurgo, autospurgo, disotturazione tubi e pronto intervento fognature a Reggio Emilia e zone vicine."}</script>
-  </head>
-  <body class="bg-obsidian text-pearl antialiased">
-<header class="sticky top-0 z-50 border-b border-white/10 bg-[#11100e]/88 backdrop-blur-xl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spurghi a Reggio Emilia H24 | Autospurgo e Fognature</title>
+  <meta name="description" content="Spurghi a Reggio Emilia, autospurgo, disotturazione tubi e pronto intervento fognature per case, condomini e aziende.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/vendor/lottie.min.js" defer></script>
+  <script>
+    tailwind.config={theme:{extend:{colors:{ink:"#28362f",cream:"#fff8ec",paper:"#fbf2e3",clay:"#b75f3a",sage:"#6f8b6f",hay:"#d8b76c",fog:"#f5ead8"},fontFamily:{display:["Georgia","serif"],sans:["Inter","ui-sans-serif","system-ui"]},boxShadow:{soft:"0 18px 60px rgba(124,72,47,.12)",lift:"0 26px 90px rgba(40,54,47,.16)"}}}};
+  </script>
+  <style>
+    html{scroll-behavior:smooth} body{background:#fbf2e3;color:#28362f}
+    .display{font-family:Georgia,serif}.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}.reveal.is-visible{opacity:1;transform:translateY(0)}
+    .shine{position:relative;overflow:hidden}.shine:after{content:"";position:absolute;inset:-70% auto auto -80%;width:46%;height:240%;transform:rotate(25deg);background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);animation:shine 6s ease-in-out infinite}@keyframes shine{0%,45%{left:-80%}75%,100%{left:140%}}
+    .sketch:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.38;background:radial-gradient(circle at 20% 20%,rgba(183,95,58,.18) 0 1px,transparent 1px);background-size:28px 28px}
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Spurghi Reggio Emilia","url":"https://spurghireggioemilia.it/","telephone":"+3905221770369","address":{"@type":"PostalAddress","streetAddress":"Via Vincenzo Monti, 12","addressLocality":"Reggio Emilia","addressRegion":"RE","postalCode":"42122","addressCountry":"IT"},"openingHours":"Mo-Su 00:00-23:59","areaServed":["Reggio Emilia","Scandiano","Correggio","Carpi","Rubiera","Montecchio Emilia","Cavriago","Albinea"]}</script>
+</head>
+<body class="text-ink antialiased">
+<header class="sticky top-0 z-50 border-b border-clay/15 bg-cream/90 backdrop-blur-xl">
   <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
-    <a href="index.html" class="flex items-center gap-3 text-white" aria-label="Spurghi Reggio Emilia homepage">
-      <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-emerald-300 via-emerald-500 to-stone-950 shadow-xl shadow-emerald-900/30">
-        <svg viewBox="0 0 48 48" class="h-8 w-8" aria-hidden="true"><path d="M12 30h24" stroke="#11100e" stroke-width="4" stroke-linecap="round"/><path d="M17 22c5-5 9-5 14 0" fill="none" stroke="#11100e" stroke-width="4" stroke-linecap="round"/><path d="M24 10v28" stroke="#11100e" stroke-width="4" stroke-linecap="round"/><circle cx="24" cy="37" r="3" fill="#11100e"/></svg>
-      </span>
-      <span class="leading-tight">
-        <span class="block text-base font-black tracking-tight">Spurghi Reggio Emilia</span>
-        <span class="block text-xs font-bold uppercase tracking-[0.22em] text-emerald-300">H24 Premium</span>
-      </span>
+    <a href="index.html" class="flex items-center gap-3">
+      <span class="flex h-14 w-14 items-center justify-center rounded-full bg-cream shadow-[0_10px_30px_rgba(124,72,47,.18)] ring-1 ring-clay/25">
+  <svg viewBox="0 0 64 64" class="h-11 w-11" aria-hidden="true">
+    <path d="M32 6 50 13v16c0 13-7 23-18 29C21 52 14 42 14 29V13L32 6Z" fill="#fff8ec" stroke="#b75f3a" stroke-width="3"/>
+    <path d="M22 31c5-5 15-5 20 0" fill="none" stroke="#6f8b6f" stroke-width="4" stroke-linecap="round"/>
+    <path d="M25 39h14" stroke="#b75f3a" stroke-width="4" stroke-linecap="round"/>
+    <path d="M32 17v28" stroke="#28362f" stroke-width="4" stroke-linecap="round"/>
+    <path d="M21 15c-4 6-5 12-4 18" fill="none" stroke="#d8b76c" stroke-width="2" stroke-linecap="round"/>
+    <path d="M43 15c4 6 5 12 4 18" fill="none" stroke="#d8b76c" stroke-width="2" stroke-linecap="round"/>
+  </svg>
+</span>
+      <span class="leading-tight"><span class="display block text-xl font-bold tracking-tight">Spurghi Reggio Emilia</span><span class="block text-xs font-black uppercase tracking-[.2em] text-clay">pronto intervento</span></span>
     </a>
-    <div class="hidden items-center gap-2 lg:flex">
-      <a href="index.html" class="rounded-full px-4 py-2 text-sm font-bold text-stone-200 hover:bg-white/10">Home</a>
-      <div class="group relative">
-        <button class="rounded-full px-4 py-2 text-sm font-bold text-stone-200 hover:bg-white/10">Servizi</button>
-        <div class="invisible absolute left-0 top-full w-72 translate-y-3 rounded-2xl border border-white/10 bg-[#171512]/98 p-2 opacity-0 shadow-2xl shadow-black/40 transition group-hover:visible group-hover:translate-y-2 group-hover:opacity-100">
-          <a href="servizi/autospurgo.html" class="block px-4 py-2 text-sm text-stone-200 hover:bg-emerald-400/10 hover:text-emerald-200">Autospurgo</a>
-<a href="servizi/spurgo-fosse-biologiche.html" class="block px-4 py-2 text-sm text-stone-200 hover:bg-emerald-400/10 hover:text-emerald-200">Fosse biologiche</a>
-<a href="servizi/disotturazione-tubi.html" class="block px-4 py-2 text-sm text-stone-200 hover:bg-emerald-400/10 hover:text-emerald-200">Disotturazione tubi</a>
-<a href="servizi/pronto-intervento-fognature.html" class="block px-4 py-2 text-sm text-stone-200 hover:bg-emerald-400/10 hover:text-emerald-200">Pronto intervento</a>
-<a href="servizi/pulizia-pozzetti.html" class="block px-4 py-2 text-sm text-stone-200 hover:bg-emerald-400/10 hover:text-emerald-200">Pulizia pozzetti</a>
-<a href="servizi/videoispezione-tubazioni.html" class="block px-4 py-2 text-sm text-stone-200 hover:bg-emerald-400/10 hover:text-emerald-200">Videoispezione</a>
-<a href="servizi/lavaggio-reti-fognarie.html" class="block px-4 py-2 text-sm text-stone-200 hover:bg-emerald-400/10 hover:text-emerald-200">Lavaggio reti</a>
-<a href="servizi/spurgo-pozzi-neri.html" class="block px-4 py-2 text-sm text-stone-200 hover:bg-emerald-400/10 hover:text-emerald-200">Pozzi neri</a>
-<a href="servizi/spurghi-condominiali.html" class="block px-4 py-2 text-sm text-stone-200 hover:bg-emerald-400/10 hover:text-emerald-200">Condomini</a>
-<a href="servizi/spurghi-ristoranti.html" class="block px-4 py-2 text-sm text-stone-200 hover:bg-emerald-400/10 hover:text-emerald-200">Ristoranti</a>
-<a href="servizi/spurghi-industriali.html" class="block px-4 py-2 text-sm text-stone-200 hover:bg-emerald-400/10 hover:text-emerald-200">Aziende</a>
-<a href="servizi/emergenze-scarichi.html" class="block px-4 py-2 text-sm text-stone-200 hover:bg-emerald-400/10 hover:text-emerald-200">Emergenze scarichi</a>
-        </div>
-      </div>
-      <div class="group relative">
-        <button class="rounded-full px-4 py-2 text-sm font-bold text-stone-200 hover:bg-white/10">Citta' dove operiamo</button>
-        <div class="invisible absolute left-0 top-full w-72 translate-y-3 rounded-2xl border border-white/10 bg-[#171512]/98 p-2 opacity-0 shadow-2xl shadow-black/40 transition group-hover:visible group-hover:translate-y-2 group-hover:opacity-100">
-          <a href="citta/scandiano.html" class="block px-4 py-2 text-sm text-stone-200 hover:bg-emerald-400/10 hover:text-emerald-200">Spurghi a Scandiano</a>
-<a href="citta/correggio.html" class="block px-4 py-2 text-sm text-stone-200 hover:bg-emerald-400/10 hover:text-emerald-200">Spurghi a Correggio</a>
-<a href="citta/carpi.html" class="block px-4 py-2 text-sm text-stone-200 hover:bg-emerald-400/10 hover:text-emerald-200">Spurghi a Carpi</a>
-<a href="citta/rubiera.html" class="block px-4 py-2 text-sm text-stone-200 hover:bg-emerald-400/10 hover:text-emerald-200">Spurghi a Rubiera</a>
-<a href="citta/montecchio-emilia.html" class="block px-4 py-2 text-sm text-stone-200 hover:bg-emerald-400/10 hover:text-emerald-200">Spurghi a Montecchio Emilia</a>
-<a href="citta/cavriago.html" class="block px-4 py-2 text-sm text-stone-200 hover:bg-emerald-400/10 hover:text-emerald-200">Spurghi a Cavriago</a>
-<a href="citta/albinea.html" class="block px-4 py-2 text-sm text-stone-200 hover:bg-emerald-400/10 hover:text-emerald-200">Spurghi a Albinea</a>
-<a href="citta/bagnolo-in-piano.html" class="block px-4 py-2 text-sm text-stone-200 hover:bg-emerald-400/10 hover:text-emerald-200">Spurghi a Bagnolo in Piano</a>
-        </div>
-      </div>
-      <a href="contact.html" class="shine rounded-full bg-emerald-300 px-5 py-2 text-sm font-black text-stone-950 shadow-lg shadow-emerald-900/30">Contattaci</a>
+    <div class="hidden items-center gap-3 lg:flex">
+      <a href="index.html" class="rounded-full px-4 py-2 text-sm font-bold hover:bg-clay/10">Home</a>
+      <details class="group relative">
+        <summary class="list-none cursor-pointer rounded-full px-4 py-2 text-sm font-bold hover:bg-clay/10">Servizi</summary>
+        <div class="absolute left-0 top-full z-50 mt-3 grid w-72 gap-1 rounded-3xl border border-clay/15 bg-cream p-3 shadow-lift"><a href="servizi/autospurgo.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-clay/10">Autospurgo</a>
+<a href="servizi/spurgo-fosse-biologiche.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-clay/10">Fosse biologiche</a>
+<a href="servizi/disotturazione-tubi.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-clay/10">Disotturazione tubi</a>
+<a href="servizi/pronto-intervento-fognature.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-clay/10">Pronto intervento</a>
+<a href="servizi/pulizia-pozzetti.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-clay/10">Pulizia pozzetti</a>
+<a href="servizi/videoispezione-tubazioni.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-clay/10">Videoispezione</a>
+<a href="servizi/lavaggio-reti-fognarie.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-clay/10">Lavaggio reti</a>
+<a href="servizi/spurgo-pozzi-neri.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-clay/10">Pozzi neri</a>
+<a href="servizi/spurghi-condominiali.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-clay/10">Condomini</a>
+<a href="servizi/spurghi-ristoranti.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-clay/10">Ristoranti</a>
+<a href="servizi/spurghi-industriali.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-clay/10">Aziende</a>
+<a href="servizi/emergenze-scarichi.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-clay/10">Emergenze scarichi</a></div>
+      </details>
+      <details class="group relative">
+        <summary class="list-none cursor-pointer rounded-full px-4 py-2 text-sm font-bold hover:bg-sage/10">Citta' dove operiamo</summary>
+        <div class="absolute left-0 top-full z-50 mt-3 grid w-72 gap-1 rounded-3xl border border-sage/20 bg-cream p-3 shadow-lift"><a href="citta/scandiano.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-sage/10">Spurghi a Scandiano</a>
+<a href="citta/correggio.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-sage/10">Spurghi a Correggio</a>
+<a href="citta/carpi.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-sage/10">Spurghi a Carpi</a>
+<a href="citta/rubiera.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-sage/10">Spurghi a Rubiera</a>
+<a href="citta/montecchio-emilia.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-sage/10">Spurghi a Montecchio Emilia</a>
+<a href="citta/cavriago.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-sage/10">Spurghi a Cavriago</a>
+<a href="citta/albinea.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-sage/10">Spurghi a Albinea</a>
+<a href="citta/bagnolo-in-piano.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-sage/10">Spurghi a Bagnolo in Piano</a></div>
+      </details>
+      <a href="contact.html" class="shine rounded-full bg-clay px-5 py-2 text-sm font-black text-white shadow-soft">Contattaci</a>
     </div>
-    <a href="tel:+3905221770369" class="rounded-full bg-emerald-300 px-4 py-2 text-sm font-black text-stone-950 lg:hidden">Chiama</a>
+    <a href="tel:+3905221770369" class="rounded-full bg-clay px-4 py-2 text-sm font-black text-white lg:hidden">Chiama</a>
   </nav>
   <div class="mx-auto grid max-w-7xl gap-2 px-4 pb-4 sm:px-6 lg:hidden">
-    <details class="rounded-2xl border border-white/10 bg-white/5 p-3">
-      <summary class="cursor-pointer text-sm font-black text-emerald-200">Servizi</summary>
-      <div class="mt-3 grid gap-1"><a href="servizi/autospurgo.html" class="block rounded-xl px-3 py-2 text-sm font-bold text-stone-200 hover:bg-white/10">Autospurgo</a>
-<a href="servizi/spurgo-fosse-biologiche.html" class="block rounded-xl px-3 py-2 text-sm font-bold text-stone-200 hover:bg-white/10">Fosse biologiche</a>
-<a href="servizi/disotturazione-tubi.html" class="block rounded-xl px-3 py-2 text-sm font-bold text-stone-200 hover:bg-white/10">Disotturazione tubi</a>
-<a href="servizi/pronto-intervento-fognature.html" class="block rounded-xl px-3 py-2 text-sm font-bold text-stone-200 hover:bg-white/10">Pronto intervento</a>
-<a href="servizi/pulizia-pozzetti.html" class="block rounded-xl px-3 py-2 text-sm font-bold text-stone-200 hover:bg-white/10">Pulizia pozzetti</a>
-<a href="servizi/videoispezione-tubazioni.html" class="block rounded-xl px-3 py-2 text-sm font-bold text-stone-200 hover:bg-white/10">Videoispezione</a>
-<a href="servizi/lavaggio-reti-fognarie.html" class="block rounded-xl px-3 py-2 text-sm font-bold text-stone-200 hover:bg-white/10">Lavaggio reti</a>
-<a href="servizi/spurgo-pozzi-neri.html" class="block rounded-xl px-3 py-2 text-sm font-bold text-stone-200 hover:bg-white/10">Pozzi neri</a>
-<a href="servizi/spurghi-condominiali.html" class="block rounded-xl px-3 py-2 text-sm font-bold text-stone-200 hover:bg-white/10">Condomini</a>
-<a href="servizi/spurghi-ristoranti.html" class="block rounded-xl px-3 py-2 text-sm font-bold text-stone-200 hover:bg-white/10">Ristoranti</a>
-<a href="servizi/spurghi-industriali.html" class="block rounded-xl px-3 py-2 text-sm font-bold text-stone-200 hover:bg-white/10">Aziende</a>
-<a href="servizi/emergenze-scarichi.html" class="block rounded-xl px-3 py-2 text-sm font-bold text-stone-200 hover:bg-white/10">Emergenze scarichi</a></div>
-    </details>
-    <details class="rounded-2xl border border-white/10 bg-white/5 p-3">
-      <summary class="cursor-pointer text-sm font-black text-emerald-200">Citta' dove operiamo</summary>
-      <div class="mt-3 grid gap-1"><a href="citta/scandiano.html" class="block rounded-xl px-3 py-2 text-sm font-bold text-stone-200 hover:bg-white/10">Spurghi a Scandiano</a>
-<a href="citta/correggio.html" class="block rounded-xl px-3 py-2 text-sm font-bold text-stone-200 hover:bg-white/10">Spurghi a Correggio</a>
-<a href="citta/carpi.html" class="block rounded-xl px-3 py-2 text-sm font-bold text-stone-200 hover:bg-white/10">Spurghi a Carpi</a>
-<a href="citta/rubiera.html" class="block rounded-xl px-3 py-2 text-sm font-bold text-stone-200 hover:bg-white/10">Spurghi a Rubiera</a>
-<a href="citta/montecchio-emilia.html" class="block rounded-xl px-3 py-2 text-sm font-bold text-stone-200 hover:bg-white/10">Spurghi a Montecchio Emilia</a>
-<a href="citta/cavriago.html" class="block rounded-xl px-3 py-2 text-sm font-bold text-stone-200 hover:bg-white/10">Spurghi a Cavriago</a>
-<a href="citta/albinea.html" class="block rounded-xl px-3 py-2 text-sm font-bold text-stone-200 hover:bg-white/10">Spurghi a Albinea</a>
-<a href="citta/bagnolo-in-piano.html" class="block rounded-xl px-3 py-2 text-sm font-bold text-stone-200 hover:bg-white/10">Spurghi a Bagnolo in Piano</a></div>
-    </details>
+    <details class="rounded-2xl border border-clay/15 bg-white/50 p-3"><summary class="cursor-pointer text-sm font-black text-clay">Servizi</summary><div class="mt-3 grid gap-1"><a href="servizi/autospurgo.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-clay/10">Autospurgo</a>
+<a href="servizi/spurgo-fosse-biologiche.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-clay/10">Fosse biologiche</a>
+<a href="servizi/disotturazione-tubi.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-clay/10">Disotturazione tubi</a>
+<a href="servizi/pronto-intervento-fognature.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-clay/10">Pronto intervento</a>
+<a href="servizi/pulizia-pozzetti.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-clay/10">Pulizia pozzetti</a>
+<a href="servizi/videoispezione-tubazioni.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-clay/10">Videoispezione</a>
+<a href="servizi/lavaggio-reti-fognarie.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-clay/10">Lavaggio reti</a>
+<a href="servizi/spurgo-pozzi-neri.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-clay/10">Pozzi neri</a>
+<a href="servizi/spurghi-condominiali.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-clay/10">Condomini</a>
+<a href="servizi/spurghi-ristoranti.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-clay/10">Ristoranti</a>
+<a href="servizi/spurghi-industriali.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-clay/10">Aziende</a>
+<a href="servizi/emergenze-scarichi.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-clay/10">Emergenze scarichi</a></div></details>
+    <details class="rounded-2xl border border-sage/20 bg-white/50 p-3"><summary class="cursor-pointer text-sm font-black text-sage">Citta' dove operiamo</summary><div class="mt-3 grid gap-1"><a href="citta/scandiano.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-sage/10">Spurghi a Scandiano</a>
+<a href="citta/correggio.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-sage/10">Spurghi a Correggio</a>
+<a href="citta/carpi.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-sage/10">Spurghi a Carpi</a>
+<a href="citta/rubiera.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-sage/10">Spurghi a Rubiera</a>
+<a href="citta/montecchio-emilia.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-sage/10">Spurghi a Montecchio Emilia</a>
+<a href="citta/cavriago.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-sage/10">Spurghi a Cavriago</a>
+<a href="citta/albinea.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-sage/10">Spurghi a Albinea</a>
+<a href="citta/bagnolo-in-piano.html" class="block rounded-xl px-3 py-2 text-sm font-semibold hover:bg-sage/10">Spurghi a Bagnolo in Piano</a></div></details>
   </div>
 </header>
 <main>
-  <section class="grain relative overflow-hidden">
-    <img src="assets/images/hero-reggio-premium.jpg" alt="Autospurgo premium a Reggio Emilia" class="absolute inset-0 h-full w-full object-cover opacity-[.45]">
-    <div class="absolute inset-0 bg-gradient-to-r from-[#11100e] via-[#11100e]/88 to-[#11100e]/35"></div>
-    <div class="relative mx-auto grid min-h-[760px] max-w-7xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-[1.05fr_.95fr] lg:items-center">
-      <div>
-        <p class="mb-5 inline-flex rounded-full border border-emerald-300/30 bg-emerald-300/10 px-4 py-2 text-sm font-black text-emerald-200">Emergenze, manutenzioni e impianti complessi</p>
-        <h1 class="max-w-5xl text-5xl font-black leading-[1.02] tracking-tight sm:text-7xl">Spurghi a Reggio Emilia con un livello di servizio superiore.</h1>
-        <p class="mt-6 max-w-3xl text-lg leading-8 text-stone-200">Scarichi bloccati, fognature in pressione, fosse biologiche da svuotare o pozzetti pieni richiedono interventi rapidi, puliti e coordinati. Questo sito nasce per chi vuole un servizio tecnico, elegante e affidabile, senza improvvisazione.</p>
-        <p class="mt-4 max-w-3xl leading-8 text-stone-300">Lavoriamo per abitazioni, condomini, locali, officine e aziende. Il focus locale resta chiaro, ma il linguaggio e' naturale: prima viene il problema del cliente, poi la soluzione corretta.</p>
-        <div class="mt-9 flex flex-col gap-3 sm:flex-row">
-          <a href="tel:+3905221770369" class="shine inline-flex items-center justify-center rounded-full bg-emerald-300 px-7 py-4 font-black text-stone-950 shadow-glow">Chiama 0522 177 0369</a>
-          <a href="contact.html" class="inline-flex items-center justify-center rounded-full border border-white/20 px-7 py-4 font-black text-white hover:bg-white/10">Richiedi intervento</a>
-        </div>
+  <section class="sketch relative overflow-hidden bg-paper">
+    <div class="mx-auto grid min-h-[720px] max-w-7xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
+      <div class="relative z-10">
+        <p class="mb-5 inline-flex rounded-full bg-sage/12 px-4 py-2 text-sm font-black text-sage">Reggio Emilia e provincia, H24</p>
+        <h1 class="display max-w-4xl text-5xl font-bold leading-[1.02] tracking-tight sm:text-7xl">Spurghi a Reggio Emilia con cura, ordine e rapidita'.</h1>
+        <p class="mt-6 max-w-2xl text-lg leading-8 text-ink/75">Scarichi bloccati, fosse biologiche, pozzetti pieni e fognature in emergenza richiedono un intervento chiaro, non improvvisato. Organizziamo l'uscita in base al problema, all'accesso e al tipo di impianto.</p>
+        <div class="mt-9 flex flex-col gap-3 sm:flex-row"><a href="tel:+3905221770369" class="shine rounded-full bg-clay px-7 py-4 text-center font-black text-white shadow-soft">0522 177 0369</a><a href="contact.html" class="rounded-full border border-clay/25 bg-cream px-7 py-4 text-center font-black">Contattaci</a></div>
       </div>
-      <div class="float-soft rounded-[2rem] border border-white/10 bg-white/10 p-4 shadow-premium backdrop-blur">
-        <img src="assets/images/team-reggio-premium.jpg" alt="Squadra tecnica spurghi" class="h-80 w-full rounded-[1.4rem] object-cover">
-        <div class="grid gap-3 p-4 sm:grid-cols-3">
-          <div><p class="text-3xl font-black text-emerald-300">H24</p><p class="text-sm text-stone-300">urgenze</p></div>
-          <div><p class="text-3xl font-black text-emerald-300">12</p><p class="text-sm text-stone-300">servizi</p></div>
-          <div><p class="text-3xl font-black text-emerald-300">RE</p><p class="text-sm text-stone-300">provincia</p></div>
-        </div>
+      <div class="relative">
+        <div class="absolute -left-6 -top-6 h-32 w-32 rounded-full bg-hay/40"></div>
+        <img src="assets/images/hero-reggio-premium.jpg" alt="Autospurgo a Reggio Emilia" class="relative h-[540px] w-full rounded-[3rem] object-cover shadow-lift">
+        <div class="absolute -bottom-7 left-8 rounded-[2rem] bg-cream p-5 shadow-lift"><p class="display text-4xl font-bold text-clay">H24</p><p class="text-sm font-bold text-ink/70">interventi urgenti</p></div>
       </div>
     </div>
   </section>
-
   <section class="reveal mx-auto max-w-7xl px-4 py-20 sm:px-6">
-    <div class="grid gap-10 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
-      <div>
-        <p class="text-sm font-black uppercase tracking-[.22em] text-emerald-300">Metodo premium</p>
-        <h2 class="mt-3 text-4xl font-black tracking-tight sm:text-5xl">Non basta arrivare. Bisogna arrivare preparati.</h2>
-      </div>
-      <div class="grid gap-5 text-lg leading-8 text-stone-300 md:grid-cols-2">
-        <p>Un intervento serio parte da poche domande utili: dove si trova il blocco, quali scarichi sono coinvolti, se ci sono odori, acqua che risale o pozzetti pieni.</p>
-        <p>Da qui si sceglie il mezzo, si valuta l'accesso e si lavora con attenzione agli spazi. Questo approccio rende il servizio piu' ordinato, veloce e comprensibile.</p>
-      </div>
-    </div>
+    <div class="grid gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-end"><div><p class="text-sm font-black uppercase tracking-[.22em] text-clay">Come lavoriamo</p><h2 class="display mt-3 text-4xl font-bold sm:text-5xl">Prima si capisce il problema, poi si interviene.</h2></div><p class="text-lg leading-8 text-ink/70">Chiediamo pochi dettagli utili: dove si trova il blocco, cosa succede agli scarichi, se ci sono odori o acqua che risale. Da qui scegliamo strumenti e mezzo adatti, con attenzione a cortili, parti comuni e ambienti di lavoro.</p></div>
   </section>
-
-  <section class="reveal bg-[#171512] px-4 py-20 sm:px-6">
-    <div class="mx-auto max-w-7xl">
-      <div class="mb-10 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
-        <div>
-          <p class="text-sm font-black uppercase tracking-[.22em] text-emerald-300">Servizi</p>
-          <h2 class="mt-3 max-w-3xl text-4xl font-black tracking-tight sm:text-5xl">Dodici interventi tecnici per scarichi, fosse e fognature.</h2>
-        </div>
-        <a href="contact.html" class="rounded-full border border-emerald-300/40 px-5 py-3 font-black text-emerald-200 hover:bg-emerald-300/10">Parla con un tecnico</a>
-      </div>
-      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <a href="servizi/autospurgo.html" class="group rounded-3xl border border-white/10 bg-[#11100e] p-6 shadow-premium transition hover:-translate-y-1 hover:border-emerald-300/40"><p class="text-xs font-black uppercase tracking-[.22em] text-goldpro">Autospurgo</p><h3 class="mt-3 text-2xl font-black text-white">Autospurgo a Reggio Emilia</h3><p class="mt-3 leading-7 text-stone-400">Quando pozzetti, fosse o reti private richiedono aspirazione e lavaggio, serve un mezzo adatto e una squadra abituata a lavorare con ordine.</p><span class="mt-5 inline-flex text-sm font-black text-emerald-300">Apri servizio</span></a>
-<a href="servizi/spurgo-fosse-biologiche.html" class="group rounded-3xl border border-white/10 bg-[#11100e] p-6 shadow-premium transition hover:-translate-y-1 hover:border-emerald-300/40"><p class="text-xs font-black uppercase tracking-[.22em] text-goldpro">Fosse biologiche</p><h3 class="mt-3 text-2xl font-black text-white">Spurgo fosse biologiche a Reggio Emilia</h3><p class="mt-3 leading-7 text-stone-400">La fossa biologica va gestita prima che diventi un'urgenza: odori, rallentamenti e rigurgiti sono segnali da non ignorare.</p><span class="mt-5 inline-flex text-sm font-black text-emerald-300">Apri servizio</span></a>
-<a href="servizi/disotturazione-tubi.html" class="group rounded-3xl border border-white/10 bg-[#11100e] p-6 shadow-premium transition hover:-translate-y-1 hover:border-emerald-300/40"><p class="text-xs font-black uppercase tracking-[.22em] text-goldpro">Disotturazione tubi</p><h3 class="mt-3 text-2xl font-black text-white">Disotturazione tubi a Reggio Emilia</h3><p class="mt-3 leading-7 text-stone-400">Uno scarico lento puo' sembrare un fastidio minore, ma spesso anticipa un blocco piu' serio nella linea.</p><span class="mt-5 inline-flex text-sm font-black text-emerald-300">Apri servizio</span></a>
-<a href="servizi/pronto-intervento-fognature.html" class="group rounded-3xl border border-white/10 bg-[#11100e] p-6 shadow-premium transition hover:-translate-y-1 hover:border-emerald-300/40"><p class="text-xs font-black uppercase tracking-[.22em] text-goldpro">Pronto intervento</p><h3 class="mt-3 text-2xl font-black text-white">Pronto intervento fognature a Reggio Emilia</h3><p class="mt-3 leading-7 text-stone-400">Quando l'acqua risale o un pozzetto trabocca, la priorita' e' intervenire in modo rapido e ordinato.</p><span class="mt-5 inline-flex text-sm font-black text-emerald-300">Apri servizio</span></a>
-<a href="servizi/pulizia-pozzetti.html" class="group rounded-3xl border border-white/10 bg-[#11100e] p-6 shadow-premium transition hover:-translate-y-1 hover:border-emerald-300/40"><p class="text-xs font-black uppercase tracking-[.22em] text-goldpro">Pulizia pozzetti</p><h3 class="mt-3 text-2xl font-black text-white">Pulizia pozzetti a Reggio Emilia</h3><p class="mt-3 leading-7 text-stone-400">Pozzetti e caditoie raccolgono sporco, sabbia, foglie e residui che nel tempo riducono il deflusso.</p><span class="mt-5 inline-flex text-sm font-black text-emerald-300">Apri servizio</span></a>
-<a href="servizi/videoispezione-tubazioni.html" class="group rounded-3xl border border-white/10 bg-[#11100e] p-6 shadow-premium transition hover:-translate-y-1 hover:border-emerald-300/40"><p class="text-xs font-black uppercase tracking-[.22em] text-goldpro">Videoispezione</p><h3 class="mt-3 text-2xl font-black text-white">Videoispezione tubazioni a Reggio Emilia</h3><p class="mt-3 leading-7 text-stone-400">Se un problema ritorna spesso, guardare dentro la tubazione puo' evitare tentativi inutili.</p><span class="mt-5 inline-flex text-sm font-black text-emerald-300">Apri servizio</span></a>
-<a href="servizi/lavaggio-reti-fognarie.html" class="group rounded-3xl border border-white/10 bg-[#11100e] p-6 shadow-premium transition hover:-translate-y-1 hover:border-emerald-300/40"><p class="text-xs font-black uppercase tracking-[.22em] text-goldpro">Lavaggio reti</p><h3 class="mt-3 text-2xl font-black text-white">Lavaggio reti fognarie a Reggio Emilia</h3><p class="mt-3 leading-7 text-stone-400">Il lavaggio delle reti aiuta a rimuovere sedimenti e incrostazioni prima che diventino un blocco completo.</p><span class="mt-5 inline-flex text-sm font-black text-emerald-300">Apri servizio</span></a>
-<a href="servizi/spurgo-pozzi-neri.html" class="group rounded-3xl border border-white/10 bg-[#11100e] p-6 shadow-premium transition hover:-translate-y-1 hover:border-emerald-300/40"><p class="text-xs font-black uppercase tracking-[.22em] text-goldpro">Pozzi neri</p><h3 class="mt-3 text-2xl font-black text-white">Spurgo pozzi neri a Reggio Emilia</h3><p class="mt-3 leading-7 text-stone-400">Un pozzo nero pieno o non correttamente gestito puo' creare odori, fuoriuscite e problemi igienici.</p><span class="mt-5 inline-flex text-sm font-black text-emerald-300">Apri servizio</span></a>
-<a href="servizi/spurghi-condominiali.html" class="group rounded-3xl border border-white/10 bg-[#11100e] p-6 shadow-premium transition hover:-translate-y-1 hover:border-emerald-300/40"><p class="text-xs font-black uppercase tracking-[.22em] text-goldpro">Condomini</p><h3 class="mt-3 text-2xl font-black text-white">Spurghi condominiali a Reggio Emilia</h3><p class="mt-3 leading-7 text-stone-400">Nei condomini serve coordinamento: il problema di una colonna o di un pozzetto puo' coinvolgere piu' appartamenti.</p><span class="mt-5 inline-flex text-sm font-black text-emerald-300">Apri servizio</span></a>
-<a href="servizi/spurghi-ristoranti.html" class="group rounded-3xl border border-white/10 bg-[#11100e] p-6 shadow-premium transition hover:-translate-y-1 hover:border-emerald-300/40"><p class="text-xs font-black uppercase tracking-[.22em] text-goldpro">Ristoranti</p><h3 class="mt-3 text-2xl font-black text-white">Spurghi per ristoranti a Reggio Emilia</h3><p class="mt-3 leading-7 text-stone-400">Cucine professionali, grassi e scarichi molto usati richiedono manutenzione piu' attenta rispetto a un'abitazione.</p><span class="mt-5 inline-flex text-sm font-black text-emerald-300">Apri servizio</span></a>
-<a href="servizi/spurghi-industriali.html" class="group rounded-3xl border border-white/10 bg-[#11100e] p-6 shadow-premium transition hover:-translate-y-1 hover:border-emerald-300/40"><p class="text-xs font-black uppercase tracking-[.22em] text-goldpro">Aziende</p><h3 class="mt-3 text-2xl font-black text-white">Spurghi industriali a Reggio Emilia</h3><p class="mt-3 leading-7 text-stone-400">Capannoni, officine e aree produttive hanno impianti piu' complessi e scarichi spesso molto sollecitati.</p><span class="mt-5 inline-flex text-sm font-black text-emerald-300">Apri servizio</span></a>
-<a href="servizi/emergenze-scarichi.html" class="group rounded-3xl border border-white/10 bg-[#11100e] p-6 shadow-premium transition hover:-translate-y-1 hover:border-emerald-300/40"><p class="text-xs font-black uppercase tracking-[.22em] text-goldpro">Emergenze scarichi</p><h3 class="mt-3 text-2xl font-black text-white">Emergenze scarichi a Reggio Emilia</h3><p class="mt-3 leading-7 text-stone-400">Uno scarico che si blocca all'improvviso puo' creare disagio immediato in casa, in negozio o in azienda.</p><span class="mt-5 inline-flex text-sm font-black text-emerald-300">Apri servizio</span></a>
-      </div>
-    </div>
-  </section>
-
-  <section class="reveal mx-auto grid max-w-7xl gap-10 px-4 py-20 sm:px-6 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
-    <div class="overflow-hidden rounded-[2rem] shadow-premium">
-      <img src="assets/images/service-reggio-premium.jpg" alt="Ispezione e disotturazione professionale" loading="lazy" class="h-[460px] w-full object-cover transition duration-1000 hover:scale-105">
-    </div>
-    <div>
-      <p class="text-sm font-black uppercase tracking-[.22em] text-emerald-300">Tecnologia e controllo</p>
-      <h2 class="mt-3 text-4xl font-black tracking-tight sm:text-5xl">Dove serve, si guarda dentro il problema.</h2>
-      <p class="mt-5 text-lg leading-8 text-stone-300">Ostruzioni ricorrenti, scarichi rumorosi e cattivi odori possono nascondere depositi, radici, tratti rotti o pendenze non corrette. Per questo gli interventi migliori non sono mai casuali.</p>
-      <div class="mt-8 rounded-3xl border border-white/10 bg-white/5 p-5">
-        <div id="pipeLottie" class="mx-auto h-56 w-56"></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="reveal bg-pearl px-4 py-20 text-stone-950 sm:px-6">
-    <div class="mx-auto max-w-7xl">
-      <p class="text-sm font-black uppercase tracking-[.22em] text-emerald-700">Citta' dove operiamo</p>
-      <h2 class="mt-3 max-w-3xl text-4xl font-black tracking-tight sm:text-5xl">Reggio Emilia e i principali comuni vicini.</h2>
-      <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <a href="citta/scandiano.html" class="rounded-3xl border border-stone-200 bg-white p-6 shadow-xl shadow-stone-200/60 transition hover:-translate-y-1 hover:border-emerald-500"><h3 class="text-xl font-black">Spurghi a Scandiano</h3><p class="mt-3 leading-7 text-stone-600">Scandiano e le sue frazioni hanno molte abitazioni, cortili e attivita' dove scarichi e pozzetti richiedono interventi rapidi e puliti.</p></a>
-<a href="citta/correggio.html" class="rounded-3xl border border-stone-200 bg-white p-6 shadow-xl shadow-stone-200/60 transition hover:-translate-y-1 hover:border-emerald-500"><h3 class="text-xl font-black">Spurghi a Correggio</h3><p class="mt-3 leading-7 text-stone-600">A Correggio interveniamo su abitazioni, condomini, negozi e aree produttive con servizi di spurgo, lavaggio e disotturazione.</p></a>
-<a href="citta/carpi.html" class="rounded-3xl border border-stone-200 bg-white p-6 shadow-xl shadow-stone-200/60 transition hover:-translate-y-1 hover:border-emerald-500"><h3 class="text-xl font-black">Spurghi a Carpi</h3><p class="mt-3 leading-7 text-stone-600">Carpi e' un polo importante per case e imprese: gli interventi vengono organizzati valutando accessi, urgenza e tipo di impianto.</p></a>
-<a href="citta/rubiera.html" class="rounded-3xl border border-stone-200 bg-white p-6 shadow-xl shadow-stone-200/60 transition hover:-translate-y-1 hover:border-emerald-500"><h3 class="text-xl font-black">Spurghi a Rubiera</h3><p class="mt-3 leading-7 text-stone-600">A Rubiera supportiamo privati, condomini e attivita' con interventi su scarichi, pozzetti, fosse e reti esterne.</p></a>
-<a href="citta/montecchio-emilia.html" class="rounded-3xl border border-stone-200 bg-white p-6 shadow-xl shadow-stone-200/60 transition hover:-translate-y-1 hover:border-emerald-500"><h3 class="text-xl font-black">Spurghi a Montecchio Emilia</h3><p class="mt-3 leading-7 text-stone-600">Montecchio Emilia richiede un servizio flessibile, utile sia per manutenzioni programmate sia per emergenze improvvise.</p></a>
-<a href="citta/cavriago.html" class="rounded-3xl border border-stone-200 bg-white p-6 shadow-xl shadow-stone-200/60 transition hover:-translate-y-1 hover:border-emerald-500"><h3 class="text-xl font-black">Spurghi a Cavriago</h3><p class="mt-3 leading-7 text-stone-600">A Cavriago interveniamo su impianti domestici e professionali, con particolare attenzione a scarichi lenti e pozzetti pieni.</p></a>
-<a href="citta/albinea.html" class="rounded-3xl border border-stone-200 bg-white p-6 shadow-xl shadow-stone-200/60 transition hover:-translate-y-1 hover:border-emerald-500"><h3 class="text-xl font-black">Spurghi a Albinea</h3><p class="mt-3 leading-7 text-stone-600">Ad Albinea lavoriamo su immobili residenziali, ville, cortili e reti private, mantenendo ordine e cura degli spazi.</p></a>
-<a href="citta/bagnolo-in-piano.html" class="rounded-3xl border border-stone-200 bg-white p-6 shadow-xl shadow-stone-200/60 transition hover:-translate-y-1 hover:border-emerald-500"><h3 class="text-xl font-black">Spurghi a Bagnolo in Piano</h3><p class="mt-3 leading-7 text-stone-600">Bagnolo in Piano e le zone vicine possono contare su interventi per spurgo, autospurgo e fognature in emergenza.</p></a>
-      </div>
-    </div>
-  </section>
-
-  <section class="reveal px-4 py-20 sm:px-6">
-    <div class="mx-auto max-w-7xl rounded-[2rem] bg-gradient-to-br from-emerald-300 to-goldpro p-8 text-stone-950 shadow-glow lg:flex lg:items-center lg:justify-between">
-      <div class="max-w-3xl"><h2 class="text-4xl font-black tracking-tight">Serve un intervento adesso?</h2><p class="mt-4 text-lg leading-8">Chiama per emergenze, manutenzioni o sopralluoghi. Il numero e' diretto e visibile senza prefisso internazionale.</p></div>
-      <a href="tel:+3905221770369" class="mt-8 inline-flex rounded-full bg-stone-950 px-7 py-4 font-black text-white lg:mt-0">0522 177 0369</a>
-    </div>
-  </section>
+  <section class="reveal bg-fog px-4 py-20 sm:px-6"><div class="mx-auto max-w-7xl"><p class="text-sm font-black uppercase tracking-[.22em] text-sage">Servizi principali</p><h2 class="display mt-3 max-w-3xl text-4xl font-bold sm:text-5xl">I quattro interventi piu' richiesti.</h2><div class="mt-10 grid gap-5 md:grid-cols-2"><a href="servizi/autospurgo.html" class="rounded-[2rem] border border-clay/15 bg-cream p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-lift"><p class="text-xs font-black uppercase tracking-[.22em] text-sage">Autospurgo</p><h3 class="display mt-3 text-3xl font-bold">Autospurgo a Reggio Emilia</h3><p class="mt-3 leading-7 text-ink/70">Per aspirazione, svuotamento e lavaggio di pozzetti, fosse e reti private.</p></a>
+<a href="servizi/spurgo-fosse-biologiche.html" class="rounded-[2rem] border border-clay/15 bg-cream p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-lift"><p class="text-xs font-black uppercase tracking-[.22em] text-sage">Fosse biologiche</p><h3 class="display mt-3 text-3xl font-bold">Spurgo fosse biologiche a Reggio Emilia</h3><p class="mt-3 leading-7 text-ink/70">Pulizia e svuotamento prima che odori, rallentamenti o rigurgiti diventino un'emergenza.</p></a>
+<a href="servizi/disotturazione-tubi.html" class="rounded-[2rem] border border-clay/15 bg-cream p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-lift"><p class="text-xs font-black uppercase tracking-[.22em] text-sage">Disotturazione tubi</p><h3 class="display mt-3 text-3xl font-bold">Disotturazione tubi a Reggio Emilia</h3><p class="mt-3 leading-7 text-ink/70">Scarichi lenti, colonne bloccate e linee esterne vengono trattati con strumenti adeguati.</p></a>
+<a href="servizi/pronto-intervento-fognature.html" class="rounded-[2rem] border border-clay/15 bg-cream p-6 shadow-soft transition hover:-translate-y-1 hover:shadow-lift"><p class="text-xs font-black uppercase tracking-[.22em] text-sage">Pronto intervento</p><h3 class="display mt-3 text-3xl font-bold">Pronto intervento fognature a Reggio Emilia</h3><p class="mt-3 leading-7 text-ink/70">Quando acqua, odori o reflussi non possono aspettare, serve una risposta rapida e concreta.</p></a></div></div></section>
+  <section class="reveal mx-auto grid max-w-7xl gap-10 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:items-center"><div class="overflow-hidden rounded-[3rem] shadow-lift"><img src="assets/images/service-reggio-premium.jpg" alt="Disotturazione e ispezione tubi" loading="lazy" class="h-[470px] w-full object-cover transition duration-1000 hover:scale-105"></div><div><p class="text-sm font-black uppercase tracking-[.22em] text-clay">Controllo tecnico</p><h2 class="display mt-3 text-4xl font-bold sm:text-5xl">Quando il blocco ritorna, serve guardare meglio.</h2><p class="mt-5 text-lg leading-8 text-ink/70">La disotturazione risolve il sintomo, ma in alcuni casi conviene capire la causa. Depositi, radici, tratti danneggiati o pendenze non corrette possono far tornare il problema.</p><div class="mt-8 rounded-[2rem] bg-cream p-5 shadow-soft"><div id="pipeLottie" class="mx-auto h-52 w-52"></div></div></div></section>
+  <section class="reveal bg-sage/10 px-4 py-20 sm:px-6"><div class="mx-auto max-w-7xl"><p class="text-sm font-black uppercase tracking-[.22em] text-sage">Citta' dove operiamo</p><h2 class="display mt-3 max-w-3xl text-4xl font-bold sm:text-5xl">Interventi anche nei comuni vicini.</h2><div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4"><a href="citta/scandiano.html" class="rounded-[2rem] bg-cream p-6 shadow-soft transition hover:-translate-y-1"><h3 class="display text-2xl font-bold">Spurghi a Scandiano</h3><p class="mt-3 leading-7 text-ink/70">Interventi per abitazioni, cortili, condomini e attivita' del territorio.</p></a>
+<a href="citta/correggio.html" class="rounded-[2rem] bg-cream p-6 shadow-soft transition hover:-translate-y-1"><h3 class="display text-2xl font-bold">Spurghi a Correggio</h3><p class="mt-3 leading-7 text-ink/70">Servizi di spurgo, autospurgo e disotturazione per case e imprese.</p></a>
+<a href="citta/carpi.html" class="rounded-[2rem] bg-cream p-6 shadow-soft transition hover:-translate-y-1"><h3 class="display text-2xl font-bold">Spurghi a Carpi</h3><p class="mt-3 leading-7 text-ink/70">Supporto per urgenze e manutenzioni su scarichi, pozzetti e fosse.</p></a>
+<a href="citta/rubiera.html" class="rounded-[2rem] bg-cream p-6 shadow-soft transition hover:-translate-y-1"><h3 class="display text-2xl font-bold">Spurghi a Rubiera</h3><p class="mt-3 leading-7 text-ink/70">Interventi rapidi su reti private, scarichi lenti e pozzetti pieni.</p></a>
+<a href="citta/montecchio-emilia.html" class="rounded-[2rem] bg-cream p-6 shadow-soft transition hover:-translate-y-1"><h3 class="display text-2xl font-bold">Spurghi a Montecchio Emilia</h3><p class="mt-3 leading-7 text-ink/70">Manutenzione e urgenze per immobili residenziali e professionali.</p></a>
+<a href="citta/cavriago.html" class="rounded-[2rem] bg-cream p-6 shadow-soft transition hover:-translate-y-1"><h3 class="display text-2xl font-bold">Spurghi a Cavriago</h3><p class="mt-3 leading-7 text-ink/70">Soluzioni per scarichi ostruiti, fosse biologiche e reti esterne.</p></a>
+<a href="citta/albinea.html" class="rounded-[2rem] bg-cream p-6 shadow-soft transition hover:-translate-y-1"><h3 class="display text-2xl font-bold">Spurghi a Albinea</h3><p class="mt-3 leading-7 text-ink/70">Servizi ordinati per ville, abitazioni, cortili e condomini.</p></a>
+<a href="citta/bagnolo-in-piano.html" class="rounded-[2rem] bg-cream p-6 shadow-soft transition hover:-translate-y-1"><h3 class="display text-2xl font-bold">Spurghi a Bagnolo in Piano</h3><p class="mt-3 leading-7 text-ink/70">Interventi su pozzetti, fognature e impianti privati.</p></a></div></div></section>
+  <section class="reveal px-4 py-20 sm:px-6"><div class="mx-auto max-w-7xl rounded-[3rem] bg-clay p-8 text-white shadow-lift lg:flex lg:items-center lg:justify-between"><div><h2 class="display text-4xl font-bold">Serve un intervento?</h2><p class="mt-3 text-white/80">Chiama o invia una richiesta dalla pagina contatti.</p></div><a href="tel:+3905221770369" class="mt-6 inline-flex rounded-full bg-cream px-7 py-4 font-black text-clay lg:mt-0">0522 177 0369</a></div></section>
 </main>
-<footer class="border-t border-white/10 bg-[#0c0b0a] px-4 py-9 sm:px-6">
-  <div class="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-stone-400 md:flex-row md:items-center md:justify-between">
+<footer class="border-t border-clay/15 bg-cream px-4 py-9 sm:px-6">
+  <div class="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-ink/70 md:flex-row md:items-center md:justify-between">
     <p>&copy; 2026 Spurghi Reggio Emilia. Tutti i diritti riservati.</p>
-    <p>Via Vincenzo Monti, 12 - 42122 Reggio Emilia RE Â· <a class="text-emerald-300" href="tel:+3905221770369">0522 177 0369</a></p>
+    <p>Via Vincenzo Monti, 12 - 42122 Reggio Emilia RE Â· <a class="font-black text-clay" href="tel:+3905221770369">0522 177 0369</a></p>
   </div>
 </footer>
-    <script>
-      window.addEventListener("DOMContentLoaded", function(){
-        var items=document.querySelectorAll(".reveal");
-        var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add("is-visible");io.unobserve(e.target);}})}, {threshold:.14});
-        items.forEach(function(i){io.observe(i)});
-        if(window.lottie && document.getElementById("pipeLottie")){window.lottie.loadAnimation({container:document.getElementById("pipeLottie"),renderer:"svg",loop:true,autoplay:true,path:"assets/lottie/emerald-pipe.json"});}
-      });
-    </script>
-  </body>
+<script>
+window.addEventListener("DOMContentLoaded",function(){var r=document.querySelectorAll(".reveal");var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add("is-visible");io.unobserve(x.target)}})},{threshold:.14});r.forEach(function(i){io.observe(i)});if(window.lottie&&document.getElementById("pipeLottie")){window.lottie.loadAnimation({container:document.getElementById("pipeLottie"),renderer:"svg",loop:true,autoplay:true,path:"assets/lottie/terra-flow.json"});}});
+</script>
+</body>
 </html>
