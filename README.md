@@ -2,6 +2,8 @@
 
 Next.js 14 App Router + TypeScript site with Tailwind CSS, shadcn/ui-style components, GSAP/ScrollTrigger/SplitText, Lenis and lucide-react.
 
+Visual direction: clear professional technical-service website, with Manrope/Inter typography, warm neutral background, charcoal text and brass/gold accent.
+
 ## Run
 
 ```bash

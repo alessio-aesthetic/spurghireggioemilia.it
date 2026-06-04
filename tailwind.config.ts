@@ -10,14 +10,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        blacklux: "#0A0A0A",
-        ink: "#EDEDED",
-        gold: "#D4AF37",
-        graphite: "#111111",
-        smoke: "#1A1A1A"
+        blacklux: "#F7F4EE",
+        ink: "#1D2522",
+        gold: "#B68A2A",
+        graphite: "#FFFFFF",
+        smoke: "#E7E0D4"
       },
       fontFamily: {
-        display: ["var(--font-playfair)"],
+        display: ["var(--font-manrope)"],
         sans: ["var(--font-inter)"]
       },
       gridTemplateColumns: {

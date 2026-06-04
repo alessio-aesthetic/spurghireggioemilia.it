@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Manrope } from "next/font/google";
 
 import { CustomCursor } from "@/components/custom-cursor";
 import { Footer } from "@/components/footer";
@@ -14,16 +14,16 @@ const inter = Inter({
   display: "swap"
 });
 
-const playfair = Playfair_Display({
+const manrope = Manrope({
   subsets: ["latin"],
-  variable: "--font-playfair",
+  variable: "--font-manrope",
   display: "swap"
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Spurghi a Reggio Emilia H24 | Autospurgo Dark Luxury",
+    default: "Spurghi a Reggio Emilia H24 | Autospurgo Professionale",
     template: "%s | Spurghi Reggio Emilia"
   },
   description:
@@ -63,7 +63,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="it" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="it" className={`${inter.variable} ${manrope.variable}`}>
       <body className="font-sans">
         <SmoothScroll />
         <CustomCursor />

@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: dark;
-  background: #0A0A0A;
+  color-scheme: light;
+  background: #F7F4EE;
 }
 
 * {
@@ -14,8 +14,8 @@
 html,
 body {
   min-height: 100%;
-  background: #0A0A0A;
-  color: #EDEDED;
+  background: #F7F4EE;
+  color: #1D2522;
 }
 
 body {
@@ -24,7 +24,7 @@ body {
 
 ::selection {
   background: #D4AF37;
-  color: #0A0A0A;
+  color: #1D2522;
 }
 
 a {
@@ -91,7 +91,7 @@ a {
     radial-gradient(circle at 15% 20%, rgba(212, 175, 55, 0.34), transparent 28%),
     radial-gradient(circle at 80% 10%, rgba(212, 175, 55, 0.22), transparent 30%),
     radial-gradient(circle at 65% 85%, rgba(212, 175, 55, 0.3), transparent 34%),
-    #0A0A0A;
+    #F7F4EE;
   background-size: 160% 160%;
   animation: meshMove 8s ease-in-out infinite alternate;
 }

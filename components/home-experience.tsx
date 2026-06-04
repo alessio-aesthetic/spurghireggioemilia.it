@@ -118,21 +118,21 @@ export function HomeExperience() {
         >
           <source src="/video/hero.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_28%,rgba(212,175,55,.24),transparent_30%),linear-gradient(90deg,#0A0A0A_0%,rgba(10,10,10,.86)_42%,rgba(10,10,10,.42)_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_28%,rgba(182,138,42,.18),transparent_30%),linear-gradient(90deg,#F7F4EE_0%,rgba(247,244,238,.92)_43%,rgba(247,244,238,.58)_100%)]" />
         <div className="luxury-grid relative z-10 mx-auto h-full max-w-[1800px] items-end px-6 pb-16 lg:px-12">
           <div className="col-span-12 pb-10 lg:col-span-8">
-            <p className="mb-8 text-xs font-bold uppercase tracking-[0.35em] text-gold">Dark luxury emergency service</p>
-            <h1 ref={heroTitle} className="font-display text-[16vw] leading-[0.86] tracking-[-0.06em] text-ink lg:text-[9.5vw]">
-              Spurghi a Reggio Emilia, senza rumore inutile.
+            <p className="mb-8 text-xs font-extrabold uppercase tracking-[0.28em] text-gold">Autospurgo e fognature H24</p>
+            <h1 ref={heroTitle} className="font-display text-[14vw] font-extrabold leading-[0.92] tracking-[-0.055em] text-ink lg:text-[8vw]">
+              Spurghi a Reggio Emilia con interventi rapidi e ordinati.
             </h1>
             <p className="hero-subtitle mt-10 max-w-2xl text-lg leading-8 text-ink/70">
-              Autospurgo, disotturazione tubi e pronto intervento fognature per case, condomini e aziende. Un servizio tecnico raccontato con la precisione di un editoriale.
+              Autospurgo, disotturazione tubi e pronto intervento fognature per case, condomini e aziende. Informazioni chiare, interventi organizzati e un numero diretto per le urgenze.
             </p>
           </div>
           <div className="col-span-12 flex flex-col items-start gap-8 pb-10 lg:col-span-4">
             <div className="border-l border-gold pl-6">
-              <p className="text-xs font-bold uppercase tracking-[0.3em] text-ink/50">Interventi nel 2024</p>
-              <p className="mt-2 font-display text-7xl text-gold">
+              <p className="text-xs font-extrabold uppercase tracking-[0.24em] text-ink/55">Interventi nel 2024</p>
+              <p className="mt-2 font-display text-7xl font-extrabold text-gold">
                 <span ref={counter}>0</span>
               </p>
             </div>
@@ -230,12 +230,12 @@ export function HomeExperience() {
         </div>
       </section>
 
-      <section className="overflow-hidden bg-[#111] py-24">
+      <section className="overflow-hidden bg-white py-24">
         <div className="marquee-track flex w-max gap-6">
           {[...reviews, ...reviews].map((review, index) => (
-            <div key={`${review}-${index}`} className="w-[420px] border border-white/10 p-8">
+            <div key={`${review}-${index}`} className="w-[420px] border border-black/10 bg-blacklux p-8">
               <Check className="h-5 w-5 text-gold" />
-              <p className="mt-8 font-display text-3xl leading-tight text-white">{review}</p>
+              <p className="mt-8 font-display text-3xl font-extrabold leading-tight text-ink">{review}</p>
             </div>
           ))}
         </div>

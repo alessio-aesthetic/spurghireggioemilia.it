@@ -21,18 +21,18 @@ export function Header() {
   return (
     <header
       className={`fixed left-0 top-0 z-50 w-full transition-all duration-500 ${
-        scrolled ? "border-b border-white/10 bg-blacklux/70 backdrop-blur-xl" : "bg-transparent"
+        scrolled ? "border-b border-black/10 bg-blacklux/85 backdrop-blur-xl" : "bg-blacklux/75 backdrop-blur"
       }`}
     >
       <div className="luxury-grid mx-auto max-w-[1800px] items-center px-6 py-5 lg:px-12">
         <Link href="/" className="col-span-8 flex items-center gap-4 lg:col-span-4">
-          <span className="flex h-12 w-10 items-center justify-center border border-gold text-gold">
+          <span className="flex h-12 w-10 items-center justify-center border border-gold bg-white text-gold">
             <ShieldCheck className="h-5 w-5" />
           </span>
           <span>
-            <span className="block font-display text-xl leading-none tracking-tight">Reggio Spurghi</span>
-            <span className="block text-[10px] font-semibold uppercase tracking-[0.35em] text-gold">
-              atelier tecnico
+            <span className="block font-display text-xl font-extrabold leading-none tracking-tight">Reggio Spurghi</span>
+            <span className="block text-[10px] font-bold uppercase tracking-[0.28em] text-gold">
+              autospurgo h24
             </span>
           </span>
         </Link>
@@ -42,12 +42,12 @@ export function Header() {
             <summary className="link-underline cursor-pointer list-none text-sm font-semibold uppercase tracking-[0.18em]">
               Servizi
             </summary>
-            <div className="absolute left-0 top-full mt-5 grid w-[380px] grid-cols-1 border border-white/10 bg-blacklux p-4 shadow-2xl">
+            <div className="absolute left-0 top-full mt-5 grid w-[380px] grid-cols-1 border border-black/10 bg-white p-4 shadow-2xl">
               {services.map((service) => (
                 <Link
                   key={service.slug}
                   href={`/servizi/${service.slug}`}
-                  className="border-b border-white/10 px-2 py-3 text-sm text-ink/70 transition hover:text-gold"
+                  className="border-b border-black/10 px-2 py-3 text-sm text-ink/70 transition hover:text-gold"
                 >
                   {service.menu}
                 </Link>
@@ -59,12 +59,12 @@ export function Header() {
             <summary className="link-underline cursor-pointer list-none text-sm font-semibold uppercase tracking-[0.18em]">
               Citta' dove operiamo
             </summary>
-            <div className="absolute left-0 top-full mt-5 grid w-[420px] grid-cols-1 border border-white/10 bg-blacklux p-4 shadow-2xl">
+            <div className="absolute left-0 top-full mt-5 grid w-[420px] grid-cols-1 border border-black/10 bg-white p-4 shadow-2xl">
               {cities.map((city) => (
                 <Link
                   key={city.slug}
                   href={`/citta/${city.slug}`}
-                  className="border-b border-white/10 px-2 py-3 text-sm text-ink/70 transition hover:text-gold"
+                  className="border-b border-black/10 px-2 py-3 text-sm text-ink/70 transition hover:text-gold"
                 >
                   Spurghi a {city.name}
                 </Link>
@@ -80,7 +80,7 @@ export function Header() {
         <div className="col-span-4 hidden justify-end lg:col-span-3 lg:flex">
           <a
             href={`tel:${site.phoneHref}`}
-            className="inline-flex items-center gap-3 text-sm font-bold uppercase tracking-[0.18em] text-gold"
+            className="inline-flex items-center gap-3 text-sm font-extrabold uppercase tracking-[0.18em] text-gold"
           >
             <Phone className="h-4 w-4" />
             {site.phone}
@@ -90,7 +90,7 @@ export function Header() {
         <div className="col-span-4 flex justify-end lg:hidden">
           <button
             aria-label="Apri menu"
-            className="border border-white/20 p-3"
+            className="border border-black/20 bg-white p-3"
             onClick={() => setOpen((value) => !value)}
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -99,8 +99,8 @@ export function Header() {
       </div>
 
       {open ? (
-        <div className="border-t border-white/10 bg-blacklux px-6 py-6 lg:hidden">
-          <details className="border-b border-white/10 py-4" open>
+        <div className="border-t border-black/10 bg-blacklux px-6 py-6 lg:hidden">
+          <details className="border-b border-black/10 py-4" open>
             <summary className="cursor-pointer font-display text-2xl">Servizi</summary>
             <div className="mt-4 grid gap-3">
               {services.map((service) => (
@@ -110,7 +110,7 @@ export function Header() {
               ))}
             </div>
           </details>
-          <details className="border-b border-white/10 py-4">
+          <details className="border-b border-black/10 py-4">
             <summary className="cursor-pointer font-display text-2xl">Citta' dove operiamo</summary>
             <div className="mt-4 grid gap-3">
               {cities.map((city) => (

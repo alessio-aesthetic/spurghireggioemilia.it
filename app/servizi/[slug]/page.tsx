@@ -69,16 +69,16 @@ export default function ServicePage({ params }: Props) {
         </article>
       </section>
 
-      <section className="bg-[#111] px-6 py-28 lg:px-12">
+      <section className="bg-white px-6 py-28 lg:px-12">
         <div className="luxury-grid mx-auto max-w-[1800px] gap-8">
           <div className="col-span-12 lg:col-span-4">
             <h2 className="font-display text-6xl leading-none">Domande frequenti</h2>
           </div>
           <div className="col-span-12 grid gap-6 lg:col-span-8">
             {service.faq.map((item) => (
-              <div key={item.q} className="border-t border-white/10 pt-6">
+              <div key={item.q} className="border-t border-black/10 pt-6">
                 <h3 className="font-display text-3xl">{item.q}</h3>
-                <p className="mt-4 leading-7 text-ink/60">{item.a}</p>
+                <p className="mt-4 leading-7 text-ink/65">{item.a}</p>
               </div>
             ))}
           </div>

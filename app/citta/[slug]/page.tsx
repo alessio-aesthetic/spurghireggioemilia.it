@@ -68,7 +68,7 @@ export default function CityPage({ params }: Props) {
         </article>
       </section>
 
-      <section className="bg-[#111] px-6 py-28 lg:px-12">
+      <section className="bg-white px-6 py-28 lg:px-12">
         <div className="luxury-grid mx-auto max-w-[1800px] gap-8">
           <div className="col-span-12 lg:col-span-4">
             <h2 className="font-display text-6xl leading-none">Servizi disponibili in zona</h2>
@@ -78,7 +78,7 @@ export default function CityPage({ params }: Props) {
               <Link
                 key={service.slug}
                 href={`/servizi/${service.slug}`}
-                className="group border-t border-white/10 py-6"
+                className="group border-t border-black/10 py-6"
               >
                 <p className="text-xs font-bold uppercase tracking-[0.28em] text-gold">{service.menu}</p>
                 <h3 className="mt-3 font-display text-3xl transition group-hover:translate-x-2 group-hover:text-gold">
